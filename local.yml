@@ -58,7 +58,7 @@ services:
     networks:
       - nextgen_local_nw
 
-  postgres:
+  postgres: # POSTGRES_HOST
     build:
       context: .
       dockerfile: ./backend/docker/local/postgres/Dockerfile
